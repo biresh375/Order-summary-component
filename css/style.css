@@ -1,0 +1,128 @@
+:root{
+    --Pale-Blue: hsl(225, 100%, 94%);
+--Bright-Blue: hsl(245, 75%, 52%);
+--Verypale-Blue: hsl(225, 100%, 98%);
+--Desaturated-Blue: hsl(224, 23%, 55%);
+--Dark-Blue: hsl(223, 47%, 23%);
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+html,
+body{
+    width: 100%;
+    height: auto;
+}
+
+
+body{
+ font-family:  "Red Hat Display", sans-serif;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-size: 16px;
+
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 820px;
+    min-height: 1080px;
+    background-color: #e0e8ff;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+.main-card{
+    height:700px ;
+    width: 450px;
+    background-color: var(--Verypale-Blue);
+    border-radius: 20px;
+    text-align: center;
+    margin: 90px 0;
+   
+}
+
+
+.main_image{
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+.card_info{
+   padding: 50px;
+}
+h1{
+    margin-bottom:35px ;
+    font-family:"Red Hat Display", sans-serif ;
+    font-weight: 900;
+
+}
+.pragraph{
+    font-weight: 600;
+    color: var(--Desaturated-Blue);
+    line-height: 1.5;
+    font-size: 18px;
+
+}
+.annual_plan{
+    width: 100%;
+    background-color: var(--Pale-Blue);
+    height: 100px;
+    border-radius: 15px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.price{
+    margin-left: -90px;
+
+}
+.change{
+    font-weight: 700;
+}
+.change:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 52%, 0.8);
+
+}
+button{
+     margin-bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    background-color:var(--Bright-Blue);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--Pale-Blue);
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 10px 10px 10px 12px hsl(225, 100%, 94%);
+    cursor: pointer;
+}
+button:hover{
+    background-color:hsl(245, 75%, 52%, 0.8) ;
+}
+
+.cancle{
+    font-weight: 700;
+    color: var(--Desaturated-Blue);
+    text-decoration: none;
+    
+
+}
+.cancle:hover{
+    color: black;
+}
